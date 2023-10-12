@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voting Application - Results</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <h1>Results</h1>
+    <div id="results">
+      <% votingData.forEach(option => { %>
+        <p><%= option.option %>: <%= option.votes %> votes</p>
+      <% }) %>
+    </div>
+  </body>
+</html>
